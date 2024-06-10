@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Area and Perimeter of Rectangle, in JavaScript" />
+  <meta name="keywords" content="mths, icd2o" />
+  <meta name="author" content="hames.al-sharoa" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none"
+    onload="if(media!='all')media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  </noscript>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-red.min.css" media="none"
+    onload="if(media!='all')media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-red.min.css" />
+  </noscript>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+</head>
+<title>movie age rating</title>
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title"><strong>movie age rating</strong></span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <p id="text">
+        What to know what movies you can watch? Input your age in the "My
+        age:" box and I can tell you!
+      </p>
+      <img src="./images/netflix.svg" alt="Computer" width="350" height="300" />
+      <form action="#" class="value">
+        My age:
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" step="any" pattern="-?[0-9]*(\.[0-9]+)?" id="age"
+            placeholder="insert age" aria-label="my age" />
+          <span class="mdl-textfield__error">Input is not an age!</span>
+        </div>
+      </form>
+      <div id="watchable">My watchable movies:</div>
+      <!-- Raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+        onclick="ageRating()">
+        movie rating
+      </button>
+    </main>
+  </div>
+</body>
 </html>
